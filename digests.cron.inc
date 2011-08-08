@@ -172,7 +172,6 @@ function template_preprocess_digests_email(&$vars) {
   $vars['date_small'] = format_date($now, 'small');
   $vars['date_medium'] = format_date($now, 'medium');
   $vars['date_large'] = format_date($now, 'large');
-  $logo = variable_get('digests_logo', '');
   $vars['logo'] = _digests_get_logo();
   $header = variable_get('digests_header', '');
   $footer = variable_get('digests_footer', '');
