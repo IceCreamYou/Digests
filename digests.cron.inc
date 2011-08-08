@@ -118,13 +118,13 @@ function _digests_cron() {
     if ($interval == 86400) {
       $subject = t('Your @site activity for @date', array(
         '@site' => variable_get('site_name', 'Drupal'),
-        '@date' => date('l, F j'),
+        '@date' => date('l, F j', $now - $interval),
       ));
     }
     elseif ($interval == 604800) {
       $subject = t('Your @site activity for the week of @date', array(
         '@site' => variable_get('site_name', 'Drupal'),
-        '@date' => date('F j'),
+        '@date' => date('F j', $now - $interval),
       ));
     }
     mimemail(
@@ -172,14 +172,8 @@ function template_preprocess_digests_email(&$vars) {
   $vars['date_small'] = format_date($now, 'small');
   $vars['date_medium'] = format_date($now, 'medium');
   $vars['date_large'] = format_date($now, 'large');
-  $vars['logo'] = empty(variable_get('digests_logo', '')) ? '' : theme(
-    'image',
-    url(variable_get('digests_logo', ''), array('absolute' => TRUE)),
-    variable_get('site_name', 'Drupal'),
-    variable_get('site_name', 'Drupal'),
-    NULL,
-    FALSE
-  );
+  $logo = variable_get('digests_logo', '');
+  $vars['logo'] = _digests_get_logo();
   $header = variable_get('digests_header', '');
   $footer = variable_get('digests_footer', '');
   if (module_exists('token')) {
@@ -193,4 +187,23 @@ function template_preprocess_digests_email(&$vars) {
     '!unsub' => url('user/'. $account->uid .'/edit', array('absolute' => TRUE)),
     '@site' => variable_get('site_name', 'Drupal'),
   ));
+}
+
+/**
+ * Get the logo for the digest email.
+ */
+function _digests_get_logo() {
+  $path = variable_get('digests_logo_use_theme', 1)
+    ? theme_get_setting('logo')         // theme's logo
+    : variable_get('digests_logo', ''); // custom path
+  if ($path) {
+    return theme(
+      'image',
+      url($path, array('absolute' => TRUE)),
+      variable_get('site_name', 'Drupal'),
+      variable_get('site_name', 'Drupal'),
+      NULL,
+      FALSE
+    );
+  }
 }
