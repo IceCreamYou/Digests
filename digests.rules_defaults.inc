@@ -108,8 +108,8 @@ function digests_rules_defaults_node_insert() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -242,8 +242,8 @@ function digests_rules_defaults_node_insert() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -408,8 +408,8 @@ function digests_rules_defaults_node_insert() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -669,8 +669,8 @@ function digests_rules_defaults_node_insert_og() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -818,8 +818,8 @@ function digests_rules_defaults_node_insert_og() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -952,8 +952,8 @@ function digests_rules_defaults_node_insert_og() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -1116,8 +1116,8 @@ function digests_rules_defaults_node_insert_og() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
-<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div>',
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -1846,8 +1846,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[status:sender-themed] wrote a message to [status:recipient-link]</div>
-<div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div>',
+                'template' => '<div class="activity-log-picture">[status:sender-picture]</div><div class="activity-log-indent"><div class="activity-log-content">[status:sender-themed] wrote a message to [status:recipient-link]</div>
+<div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -2763,8 +2763,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[status:sender-themed] sent a [attachment:attachment-type] to [status:recipient-link]</div>
-<div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div>',
+                'template' => '<div class="activity-log-picture">[status:sender-picture]</div><div class="activity-log-indent"><div class="activity-log-content">[status:sender-themed] sent a [attachment:attachment-type] to [status:recipient-link]</div>
+<div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -3085,7 +3085,7 @@ function digests_rules_defaults_og_join() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div>',
+                'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -3099,7 +3099,7 @@ function digests_rules_defaults_og_join() {
               array (
                 'en' => 
                 array (
-                  'template' => '<div class="activity-log-content">[account:user] joined the groups [collection]</div>',
+                  'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the groups [collection]</div></div>',
                 ),
               ),
             ),
@@ -3252,7 +3252,7 @@ function digests_rules_defaults_og_join() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div>',
+                'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div></div>',
               ),
             ),
             'grouping' => 
@@ -3266,7 +3266,7 @@ function digests_rules_defaults_og_join() {
               array (
                 'en' => 
                 array (
-                  'template' => '<div class="activity-log-content">[account:user] joined the groups [collection]</div>',
+                  'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the groups [collection]</div></div>',
                 ),
               ),
             ),
@@ -3404,7 +3404,7 @@ function digests_rules_defaults_og_join() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[account:user] joined the group</div>',
+                'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group</div></div>',
               ),
             ),
             'grouping' => 
@@ -3564,7 +3564,7 @@ function digests_rules_defaults_ur_request() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div>',
+                'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div></div>',
               ),
             ),
             'grouping' => 
@@ -3578,7 +3578,7 @@ function digests_rules_defaults_ur_request() {
               array (
                 'en' => 
                 array (
-                  'template' => '<div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div>',
+                  'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div></div>',
                 ),
               ),
             ),
@@ -3733,7 +3733,7 @@ function digests_rules_defaults_ur_request() {
             array (
               'en' => 
               array (
-                'template' => '<div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div>',
+                'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div></div>',
               ),
             ),
             'grouping' => 
@@ -3747,7 +3747,7 @@ function digests_rules_defaults_ur_request() {
               array (
                 'en' => 
                 array (
-                  'template' => '<div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div>',
+                  'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div></div>',
                 ),
               ),
             ),
