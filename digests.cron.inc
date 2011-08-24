@@ -15,7 +15,7 @@
 function _digests_cron() {
   $default_tz = variable_get('date_default_timezone', 0);
   $now = time();
-  $send_time = mktime(variable_get('digests_send_time', 18), 0, 0);
+  $send_time = gmmktime(variable_get('digests_send_time', 18), 0, 0);
 
   // Step 1: Get users for whom it is after 6PM in their timezone but who have not had a digest sent for this interval.
   $default = $now > $send_time + $default_tz || $now < $send_time + $default_tz - 43200; // whether it's past send_time in the site's default timezone
@@ -33,14 +33,14 @@ function _digests_cron() {
       %d > COALESCE(last_sent, created) + (COALESCE(send_interval, 86400) - 43200) /* it's been at least (interval - 12 hours) since the last digest email */
   ";
   if (variable_get('digests_local', 'local') == 'local') {
-    $query .= " AND (
+    $query .= "    AND (
         %d /* NOW */ > %d /* SEND */ + timezone OR      /* it's after send_time today */
         %d /* NOW */ < %d /* SEND */ + timezone - 43200 /* it's more than 12hrs before send_time today, i.e. less than 12hrs since send_time yesterday */
     ";
     if ($default) {
-      $query .= "    OR timezone IS NULL /* the user has not set a timezone, fall back to the site default */";
+      $query .= "    OR timezone IS NULL /* the user has not set a timezone, fall back to the site default */\n    ";
     }
-    $query .= "\n      )";
+    $query .= "  )";
     if (variable_get('digests_limit', 250)) {
       $result = db_query_range($query, $now, $now, $send_time, $now, $send_time, 0, variable_get('digests_limit', 250));
     }
