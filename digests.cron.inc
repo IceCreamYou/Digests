@@ -114,9 +114,9 @@ function _digests_cron() {
     if (!empty($messages)) {
       $aids = array();
       $aid_to_result_key_map = array();
-      foreach ($messages as $key => $result) {
-        if ($result->target_type == 'node') {
-          $result_aids = array_filter(explode(',', $result->aids));
+      foreach ($messages as $key => $item) {
+        if ($item->target_type == 'node') {
+          $result_aids = array_filter(explode(',', $item->aids));
           $aids = array_merge($aids, $result_aids);
           foreach ($result_aids as $aid) {
             $aid_to_result_key_map[$aid] = $key;
