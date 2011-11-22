@@ -49,7 +49,7 @@ function digests_rules_defaults_node_insert() {
         1 => 'node',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' =>
       array (
         0 => 
@@ -583,7 +583,7 @@ function digests_rules_defaults_node_insert_og() {
         2 => 'og',
         3 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
         0 => 
@@ -1262,7 +1262,7 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
         1 => 'facebook_status',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
         0 => 
@@ -1639,7 +1639,7 @@ function digests_rules_defaults_facebook_status_insert_other() {
         1 => 'facebook_status',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
         0 => 
@@ -2170,7 +2170,7 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
         1 => 'fbsmp',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
         0 => 
@@ -2539,7 +2539,7 @@ function digests_rules_defaults_fbsmp_insert_other() {
         1 => 'fbsmp',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
         0 => 
@@ -3068,7 +3068,7 @@ function digests_rules_defaults_og_join() {
         1 => 'og',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
       ),
@@ -3547,7 +3547,7 @@ function digests_rules_defaults_ur_request() {
         1 => 'user_relationships',
         2 => 'digests',
       ),
-      '#status' => 'custom',
+      '#status' => 'default',
       '#conditions' => 
       array (
       ),
