@@ -95,8 +95,8 @@ function digests_rules_defaults_node_insert() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -107,6 +107,11 @@ function digests_rules_defaults_node_insert() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
@@ -122,6 +127,10 @@ function digests_rules_defaults_node_insert() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -205,13 +214,13 @@ function digests_rules_defaults_node_insert() {
                   0 => 'author',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -223,8 +232,8 @@ function digests_rules_defaults_node_insert() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -245,6 +254,11 @@ function digests_rules_defaults_node_insert() {
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
+              'und' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
             ),
             'grouping' => 
             array (
@@ -256,6 +270,10 @@ function digests_rules_defaults_node_insert() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -338,13 +356,13 @@ function digests_rules_defaults_node_insert() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -356,8 +374,8 @@ function digests_rules_defaults_node_insert() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -374,8 +392,8 @@ function digests_rules_defaults_node_insert() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -395,8 +413,8 @@ function digests_rules_defaults_node_insert() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -407,6 +425,11 @@ function digests_rules_defaults_node_insert() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
@@ -422,6 +445,10 @@ function digests_rules_defaults_node_insert() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -504,13 +531,13 @@ function digests_rules_defaults_node_insert() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -522,8 +549,8 @@ function digests_rules_defaults_node_insert() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -656,8 +683,8 @@ function digests_rules_defaults_node_insert_og() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -668,6 +695,11 @@ function digests_rules_defaults_node_insert_og() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
@@ -683,6 +715,10 @@ function digests_rules_defaults_node_insert_og() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -766,13 +802,13 @@ function digests_rules_defaults_node_insert_og() {
                   0 => 'author',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -784,8 +820,8 @@ function digests_rules_defaults_node_insert_og() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -805,8 +841,8 @@ function digests_rules_defaults_node_insert_og() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -817,6 +853,11 @@ function digests_rules_defaults_node_insert_og() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
@@ -832,6 +873,10 @@ function digests_rules_defaults_node_insert_og() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -914,13 +959,13 @@ function digests_rules_defaults_node_insert_og() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -932,8 +977,8 @@ function digests_rules_defaults_node_insert_og() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -955,6 +1000,11 @@ function digests_rules_defaults_node_insert_og() {
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
               ),
+              'und' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
             ),
             'grouping' => 
             array (
@@ -966,6 +1016,10 @@ function digests_rules_defaults_node_insert_og() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -1048,13 +1102,13 @@ function digests_rules_defaults_node_insert_og() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -1066,8 +1120,8 @@ function digests_rules_defaults_node_insert_og() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -1084,8 +1138,8 @@ function digests_rules_defaults_node_insert_og() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
         ),
@@ -1103,8 +1157,8 @@ function digests_rules_defaults_node_insert_og() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -1115,6 +1169,11 @@ function digests_rules_defaults_node_insert_og() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
+<div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[author:picture]</div><div class="activity-log-indent"><div class="activity-log-content"><a href="[author:account-url]">[author:user]</a> added the [node:type-name] <a href="[node:node-url]">[node:title]</a> in <a href="[node:og-url]">[node:ogname]</a></div>
 <div class="activity-log-time"><a href="[node:node-url]">[node:small] ago</a></div></div>',
@@ -1130,6 +1189,10 @@ function digests_rules_defaults_node_insert_og() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -1212,13 +1275,13 @@ function digests_rules_defaults_node_insert_og() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'node',
                   1 => 'author',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -1230,8 +1293,8 @@ function digests_rules_defaults_node_insert_og() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -1316,6 +1379,18 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
 <tr><td colspan="2">[status:comments-email]</td></tr>
 </table>',
               ),
+              'und' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
             ),
             'grouping' => 
             array (
@@ -1327,6 +1402,10 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -1414,12 +1493,12 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -1431,8 +1510,8 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -1449,8 +1528,8 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -1470,8 +1549,8 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -1482,6 +1561,18 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
+              'und' => 
               array (
                 'template' => '<table style="font-size:small;"><tr>
 <td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
@@ -1504,6 +1595,10 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -1591,12 +1686,12 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -1608,8 +1703,8 @@ function digests_rules_defaults_facebook_status_insert_user_self() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -1688,8 +1783,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -1700,6 +1795,18 @@ function digests_rules_defaults_facebook_status_insert_other() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] &raquo; [status:recipient-link] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
+              'und' => 
               array (
                 'template' => '<table style="font-size:small;"><tr>
 <td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
@@ -1722,6 +1829,10 @@ function digests_rules_defaults_facebook_status_insert_other() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -1810,12 +1921,12 @@ function digests_rules_defaults_facebook_status_insert_other() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -1827,8 +1938,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -1849,6 +1960,11 @@ function digests_rules_defaults_facebook_status_insert_other() {
                 'template' => '<div class="activity-log-picture">[status:sender-picture]</div><div class="activity-log-indent"><div class="activity-log-content">[status:sender-themed] wrote a message to [status:recipient-link]</div>
 <div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div></div>',
               ),
+              'und' => 
+              array (
+                'template' => '<div class="activity-log-picture">[status:sender-picture]</div><div class="activity-log-indent"><div class="activity-log-content">[status:sender-themed] wrote a message to [status:recipient-link]</div>
+<div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div></div>',
+              ),
             ),
             'grouping' => 
             array (
@@ -1860,6 +1976,10 @@ function digests_rules_defaults_facebook_status_insert_other() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -1947,12 +2067,12 @@ function digests_rules_defaults_facebook_status_insert_other() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -1964,8 +2084,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -1982,8 +2102,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
         ),
@@ -2002,8 +2122,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -2014,6 +2134,18 @@ function digests_rules_defaults_facebook_status_insert_other() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] &raquo; [status:recipient-link] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
+              'und' => 
               array (
                 'template' => '<table style="font-size:small;"><tr>
 <td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
@@ -2036,6 +2168,10 @@ function digests_rules_defaults_facebook_status_insert_other() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -2122,12 +2258,12 @@ function digests_rules_defaults_facebook_status_insert_other() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -2139,8 +2275,8 @@ function digests_rules_defaults_facebook_status_insert_other() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -2225,6 +2361,19 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
 <tr><td colspan="2">[status:comments-email]</td></tr>
 </table>',
               ),
+              'und' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[attachment:attachment-themed]</td></tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
             ),
             'grouping' => 
             array (
@@ -2236,6 +2385,10 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -2318,12 +2471,12 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -2335,8 +2488,8 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -2353,8 +2506,8 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -2374,8 +2527,8 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -2386,6 +2539,19 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[attachment:attachment-themed]</td></tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
+              'und' => 
               array (
                 'template' => '<table style="font-size:small;"><tr>
 <td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
@@ -2409,6 +2575,10 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -2491,12 +2661,12 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -2508,8 +2678,8 @@ function digests_rules_defaults_fbsmp_insert_user_self() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -2595,6 +2765,19 @@ function digests_rules_defaults_fbsmp_insert_other() {
 <tr><td colspan="2">[status:comments-email]</td></tr>
 </table>',
               ),
+              'und' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] &raquo; [status:recipient-link] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[attachment:attachment-themed]</td></tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
             ),
             'grouping' => 
             array (
@@ -2606,6 +2789,10 @@ function digests_rules_defaults_fbsmp_insert_other() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -2694,12 +2881,12 @@ function digests_rules_defaults_fbsmp_insert_other() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -2711,8 +2898,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -2729,8 +2916,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -2750,8 +2937,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -2762,6 +2949,11 @@ function digests_rules_defaults_fbsmp_insert_other() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[status:sender-picture]</div><div class="activity-log-indent"><div class="activity-log-content">[status:sender-themed] sent a [attachment:attachment-type] to [status:recipient-link]</div>
+<div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[status:sender-picture]</div><div class="activity-log-indent"><div class="activity-log-content">[status:sender-themed] sent a [attachment:attachment-type] to [status:recipient-link]</div>
 <div class="activity-log-time"><a href="[status:status-url]">[status:created]</a></div></div>',
@@ -2777,6 +2969,10 @@ function digests_rules_defaults_fbsmp_insert_other() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -2859,13 +3055,13 @@ function digests_rules_defaults_fbsmp_insert_other() {
                   0 => 'status',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => 'attachment',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -2877,8 +3073,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -2906,6 +3102,19 @@ function digests_rules_defaults_fbsmp_insert_other() {
 <tr><td colspan="2">[status:comments-email]</td></tr>
 </table>',
               ),
+              'und' => 
+              array (
+                'template' => '<table style="font-size:small;"><tr>
+<td style="vertical-align:top;padding-right:12px;">[status:sender-picture]</td>
+<td>
+<div>[status:sender-themed] &raquo; [status:recipient-link] [status:message-formatted]</div>
+<div><span style="color: #666666;">[status:created-small]</span> <a href="[status:status-url]">Reply</a></div>
+</td>
+</tr>
+<tr><td colspan="2">[attachment:attachment-themed]</td></tr>
+<tr><td colspan="2">[status:comments-email]</td></tr>
+</table>',
+              ),
             ),
             'grouping' => 
             array (
@@ -2917,6 +3126,10 @@ function digests_rules_defaults_fbsmp_insert_other() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '',
+                ),
+                'und' => 
                 array (
                   'template' => '',
                 ),
@@ -3003,12 +3216,12 @@ function digests_rules_defaults_fbsmp_insert_other() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'status',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -3020,8 +3233,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -3038,8 +3251,8 @@ function digests_rules_defaults_fbsmp_insert_other() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -3087,6 +3300,10 @@ function digests_rules_defaults_og_join() {
               array (
                 'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div></div>',
               ),
+              'und' => 
+              array (
+                'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div></div>',
+              ),
             ),
             'grouping' => 
             array (
@@ -3098,6 +3315,10 @@ function digests_rules_defaults_og_join() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the groups [collection]</div></div>',
+                ),
+                'und' => 
                 array (
                   'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the groups [collection]</div></div>',
                 ),
@@ -3182,13 +3403,13 @@ function digests_rules_defaults_og_join() {
                   0 => 'account',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'account',
                   1 => 'group',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => 'account',
                   1 => ':global',
@@ -3201,8 +3422,8 @@ function digests_rules_defaults_og_join() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -3219,8 +3440,8 @@ function digests_rules_defaults_og_join() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -3239,8 +3460,8 @@ function digests_rules_defaults_og_join() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -3251,6 +3472,10 @@ function digests_rules_defaults_og_join() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group <a href="[group:node-url]">[group:title]</a></div></div>',
               ),
@@ -3265,6 +3490,10 @@ function digests_rules_defaults_og_join() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the groups [collection]</div></div>',
+                ),
+                'und' => 
                 array (
                   'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the groups [collection]</div></div>',
                 ),
@@ -3349,13 +3578,13 @@ function digests_rules_defaults_og_join() {
                   0 => 'account',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'account',
                   1 => 'group',
                   2 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => 'account',
                   1 => ':global',
@@ -3368,8 +3597,8 @@ function digests_rules_defaults_og_join() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -3391,8 +3620,8 @@ function digests_rules_defaults_og_join() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -3403,6 +3632,10 @@ function digests_rules_defaults_og_join() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group</div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[account:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[account:user] joined the group</div></div>',
               ),
@@ -3417,6 +3650,10 @@ function digests_rules_defaults_og_join() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '<div class="activity-log-content">[names] joined the group</div>',
+                ),
+                'und' => 
                 array (
                   'template' => '<div class="activity-log-content">[names] joined the group</div>',
                 ),
@@ -3499,12 +3736,12 @@ function digests_rules_defaults_og_join() {
                 array (
                   0 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'account',
                   1 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => ':global',
                 ),
@@ -3516,8 +3753,8 @@ function digests_rules_defaults_og_join() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -3566,6 +3803,10 @@ function digests_rules_defaults_ur_request() {
               array (
                 'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div></div>',
               ),
+              'und' => 
+              array (
+                'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div></div>',
+              ),
             ),
             'grouping' => 
             array (
@@ -3577,6 +3818,10 @@ function digests_rules_defaults_ur_request() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div></div>',
+                ),
+                'und' => 
                 array (
                   'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div></div>',
                 ),
@@ -3660,14 +3905,14 @@ function digests_rules_defaults_ur_request() {
                   0 => 'requester',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'requester',
                   1 => 'requestee',
                   2 => 'relationship',
                   3 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => 'requester',
                   1 => 'relationship',
@@ -3681,8 +3926,8 @@ function digests_rules_defaults_ur_request() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
@@ -3699,8 +3944,8 @@ function digests_rules_defaults_ur_request() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#weight' => 0,
@@ -3720,8 +3965,8 @@ function digests_rules_defaults_ur_request() {
               2 => 'visibility|stream_owner_id',
               3 => 'visibility|viewer_id',
               4 => 'acting_uid',
-              5 => 'templates|en|template',
-              6 => 'grouping|templates|en|template',
+              5 => 'templates|und|template',
+              6 => 'grouping|templates|und|template',
             ),
           ),
           '#name' => 'activity_log_log_action',
@@ -3732,6 +3977,10 @@ function digests_rules_defaults_ur_request() {
             'templates' => 
             array (
               'en' => 
+              array (
+                'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div></div>',
+              ),
+              'und' => 
               array (
                 'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [requestee:user]</div></div>',
               ),
@@ -3746,6 +3995,10 @@ function digests_rules_defaults_ur_request() {
               'templates' => 
               array (
                 'en' => 
+                array (
+                  'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div></div>',
+                ),
+                'und' => 
                 array (
                   'template' => '<div class="activity-log-picture">[requester:picture]</div><div class="activity-log-indent"><div class="activity-log-content">[requester:user] [relationship:relationship-name]ed [collection]</div></div>',
                 ),
@@ -3829,14 +4082,14 @@ function digests_rules_defaults_ur_request() {
                   0 => 'requester',
                   1 => ':global',
                 ),
-                'templates|en|template' => 
+                'templates|und|template' => 
                 array (
                   0 => 'requester',
                   1 => 'requestee',
                   2 => 'relationship',
                   3 => ':global',
                 ),
-                'grouping|templates|en|template' => 
+                'grouping|templates|und|template' => 
                 array (
                   0 => 'requester',
                   1 => 'relationship',
@@ -3850,8 +4103,8 @@ function digests_rules_defaults_ur_request() {
                 'visibility|stream_owner_id' => true,
                 'visibility|viewer_id' => true,
                 'acting_uid' => true,
-                'templates|en|template' => true,
-                'grouping|templates|en|template' => true,
+                'templates|und|template' => true,
+                'grouping|templates|und|template' => true,
               ),
             ),
           ),
