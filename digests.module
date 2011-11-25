@@ -18,6 +18,28 @@ function digests_menu() {
     'description' => 'Allows administrators to adjust settings for Activity Log Digests.',
     'file' => 'digests.admin.inc',
   );
+  $items['admin/settings/digests/main'] = array(
+    'title' => 'Settings',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'access arguments' => array('administer site configuration'),
+    'weight' => -1,
+  );
+  $items['admin/settings/digests/send'] = array(
+    'title' => 'Send now',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('digests_admin_send'),
+    'access arguments' => array('administer site configuration'),
+    'description' => 'Allows administrators to send digest emails immediately.',
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'digests.admin.inc',
+  );
+  $items['digests/autocomplete'] = array(
+    'title' => 'Digests user autocomplete',
+    'page callback' => '_digests_user_autocomplete',
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK,
+    'file' => 'digests.admin.inc',
+  );
   return $items;
 }
 
